@@ -1,0 +1,223 @@
+:root {
+  /* ### Primary */
+
+  --Gradient: hsl(6, 100%, 80%) to hsl(335, 100%, 65%);
+
+  /* ### Neutral */
+
+  --Pale-Blue: hsl(243, 100%, 93%);
+  --Grayish-Blue: hsl(229, 7%, 55%);
+  --Dark-Blue: hsl(228, 56%, 26%);
+  --Very-Dark-Blue: hsl(229, 57%, 11%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: 'Raleway', sans-serif;
+}
+
+body {
+  font-size: 1.2rem;
+  font-family: 'Raleway', sans-serif;
+}
+
+
+
+.Container {
+  max-width: 1110px;
+  width: 90%;
+  margin: 0 auto;
+  height: 100vh;
+  background-color: var(--Very-Dark-Blue);
+  background-image: url(./images/bg-desktop.png);
+  background-position-y: bottom;
+  background-repeat: no-repeat;
+
+background-size: 100% ,1vh  ;
+
+}
+
+
+/* .background{
+  background-image: url(./images/bg-desktop.png);
+  background-position-y: bottom;
+  background-repeat: no-repeat;
+position: absolute;
+background-size: contain;
+
+} */
+
+/* .Container::after{
+  content: "";
+  display: block;
+  background-image: url(./images/bg-desktop.png);
+width: 100%;
+  height: 50vh;
+  background-repeat: no-repeat;
+  position: relative;
+  bottom: 0;
+  
+} */
+
+.Wraper {
+
+  margin: 0rem 1rem;
+  height: 60vh;
+}
+
+.maindiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  z-index: 10;
+}
+
+.action {
+  background-color: var(--Dark-Blue);
+  padding: 2rem 2rem;
+  width: 30rem;
+  height: 20vh;
+  align-items: center;
+  border-radius: 1rem;
+  border-top-right-radius: 9rem;
+}
+
+
+.action ul {
+  list-style: none;
+  margin: 1rem 0 1rem 0;
+  align-self: center;
+}
+
+.action ul li {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.action ul li button {
+  background-color: var(--Very-Dark-Blue);
+  border-radius: 1rem;
+}
+
+.action ul li button img {
+  padding: .5rem .5rem;
+}
+
+
+.progress {
+  width: 40rem;
+  height: 20vh;
+  background-color: var(--Dark-Blue);
+  margin-left: 1rem;
+  border-radius: 1rem;
+}
+
+.progressbar {
+  background-color: var(--Very-Dark-Blue);
+  width: 90%;
+  height: 1.5rem;
+  border-radius: 1rem;
+  margin: 4rem 1rem 5rem 1rem;
+
+}
+
+.progresscolor {
+  width: 70%;
+  height: 1.3rem;
+  border-radius: 1rem;
+  position: relative;
+  background-color: white;
+  top: .1rem;
+
+  background: linear-gradient(70deg, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+}
+
+.ball {
+  width: 10px;
+  height: 1rem;
+  color: white;
+  background-color: antiquewhite;
+  position: relative;
+  border-radius: 50%;
+  left: 67%;
+  bottom: 1rem;
+}
+
+.progress h5 {
+  position: relative;
+  top: 3.5rem;
+  font-size: 1.2rem;
+  left: 1rem;
+  color: var(--Grayish-Blue);
+}
+
+.leftright {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  bottom: 4.5rem;
+  padding: 0 1rem 0 1rem;
+  color: var(--Grayish-Blue);
+
+}
+
+.message {
+  position: relative;
+  background-color: white;
+  padding: 1rem 2rem;
+  width: 15rem;
+  border-radius: 1rem;
+margin-top: -4rem;
+  margin-left: 20rem;
+}
+
+h1 {
+  display: inline-block;
+}
+
+.message::before {
+  content: "";
+  background-color: white;
+  height: 2rem;
+  width: 2rem;
+  position: absolute;
+  top: 4rem;
+  left: 13.01rem;
+  clip-path: polygon(100% 0, 0 0, 100% 100%);
+}
+
+@media only screen and (min-width:360px) and (max-width:900px) {
+
+.Container{
+  background-image: url(./images/bg-mobile.png);
+  background-position: center;
+  background-size: cover;
+width: 100%;
+}
+
+  .maindiv {
+    flex-direction: column;
+  }
+
+  .action {
+    width: 90%;
+    height: auto;
+  }
+
+  .progress {
+    width: 90%;
+    margin: 5rem 1rem 5rem 1rem;
+    height: auto;
+  }
+
+  .message {
+margin-left: 10rem;
+  }
+}
