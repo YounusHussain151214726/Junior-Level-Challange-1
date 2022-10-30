@@ -70,7 +70,6 @@ width: 100%;
   margin: 0rem 1rem;
   height: 60vh;
 }
-
 .maindiv {
   display: flex;
   justify-content: center;
@@ -87,6 +86,7 @@ width: 100%;
   align-items: center;
   border-radius: 1rem;
   border-top-right-radius: 9rem;
+margin-top: 12rem;
 }
 
 
@@ -117,6 +117,7 @@ width: 100%;
   background-color: var(--Dark-Blue);
   margin-left: 1rem;
   border-radius: 1rem;
+margin-top: 12rem;
 }
 
 .progressbar {
@@ -193,7 +194,7 @@ h1 {
   clip-path: polygon(100% 0, 0 0, 100% 100%);
 }
 
-@media only screen and (min-width:360px) and (max-width:900px) {
+@media only screen and (min-width:360px) and (max-width:490px) {
 
 .Container{
   background-image: url(./images/bg-mobile.png);
@@ -216,8 +217,40 @@ width: 100%;
     margin: 5rem 1rem 5rem 1rem;
     height: auto;
   }
-
-  .message {
-margin-left: 10rem;
+  .message{
+    margin-left: 15rem;
   }
+}
+
+@media only screen and (min-width:500px) and (max-width:1000px) {
+  .Container{
+    background-image: url(./images/bg-mobile.png);
+    background-position: center;
+    background-size: cover;
+  width: 100%;
+  }
+  .maindiv {
+    flex-direction: column;
+  }
+  .action {
+    width: 70%;
+    height: 15rem;
+  }
+
+  .progress {
+    width: 70%;
+    margin: 5rem 1rem 5rem 1rem;
+  height: 15rem;
+  }
+.message{
+  float: right;
+margin-right: 7rem;
+}
+.progress h5{
+  width: 80%;
+}
+}
+
+@media only screen and (min-width:1010px) and (max-width:1500px) {
+
 }
